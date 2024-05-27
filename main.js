@@ -97,11 +97,24 @@ let fruits18 = ["Apple", "Mango", "GRApes", "Kiwi", "BAnana", "Falsa", "Avacado"
 fruits18.splice(4, 1); //['Apple', 'Mango', 'Grapes', 'Kiwi', 'Falsa', 'Avacado']
 fruits18.splice(1, 2); //[ 'Apple', 'Kiwi', 'Falsa', 'Avacado' ]
 console.log(fruits18);
-// Example 
+// Example (5 , 0 , "cherry") dia tu 5 par cherry add ho ga
 let fruits19 = ["Apple", "Mango", "Grapes", "Kiwi", "Orange", "Lemon", "Melon", "Falsa", "Watermelon"];
 fruits19.splice(5, 0, "Cherry");
-console.log(fruits19);
+console.log(fruits19); // ['Apple', 'Mango', 'Grapes', 'kiwi' , 'Orange' , 'Cherry' , 'Lemon' , 'Melon' , 'Falsa' ,'Watermelon']
 // Example
 let fruits20 = ["Apple", "Mango", "Grapes", "Kiwi"];
 fruits20.splice(1, 2, "Orange");
 console.log(fruits20); //[ 'Apple', 'Orange', 'Kiwi' ]
+// Example 9 (indexof) function
+let fruits21 = ["Apple", "Mango", "Grapes", "Kiwi", "Orange", "Lemon"];
+let fruit = fruits21.indexOf("Kiwi");
+console.log(fruit); //3
+let fruits22 = ["Apple", "Mango", "Grapes", "Kiwi", "Orange", "Lemon", "Kiwi", "Orange", "falsa"];
+let fruits = fruits22.indexOf("Kiwi", 5); //5 k bad wali kiwi
+console.log(fruits); //6
+// Example 10 (concat)
+let fruits23 = ["Apple", "Mango", "Grapes", "Kiwi"];
+let newFruit = ["Lichi", "Mailta", "rassberry"];
+let add = fruits23.concat(newFruit);
+console.log(add); //1st method
+console.log(fruits23.concat(newFruit)); //2nd Method

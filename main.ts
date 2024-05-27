@@ -129,6 +129,24 @@ let fruits20: string[] = ["Apple", "Mango", "Grapes", "Kiwi"];
 fruits20.splice(1 , 2 , "Orange");
 console.log(fruits20);    //[ 'Apple', 'Orange', 'Kiwi' ]
 
+// Example 9 (indexof) function
+let fruits21: string[] = ["Apple", "Mango", "Grapes", "Kiwi", "Orange", "Lemon"];
+ let fruit = fruits21.indexOf("Kiwi");
+console.log(fruit);   //3
+
+let fruits22: string[] = ["Apple", "Mango", "Grapes", "Kiwi", "Orange", "Lemon", "Kiwi", "Orange", "falsa"];
+let fruits = fruits22.indexOf("Kiwi", 5);                                 //5 k bad wali kiwi
+console.log(fruits);    //6
+
+// Example 10 (concat)
+let fruits23: string[] = ["Apple", "Mango", "Grapes", "Kiwi"];
+let newFruit: string[] = ["Lichi", "Malta", "rassberry"];
+let add = fruits23.concat(newFruit);
+console.log(add);                             //1st method
+console.log(fruits23.concat(newFruit));       //2nd Method
+
+//[ 'Apple', 'Mango', 'Grapes', 'Kiwi', 'Lichi', 'Mailta', 'rassberry' ]
+
 
 
 
